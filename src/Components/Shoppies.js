@@ -64,7 +64,7 @@ const Shoppies = () => {
     const fetchData = async (input) => {
         if (input) {
             console.log("fetching");
-            return await fetch(`http://www.omdbapi.com/?apikey=652c5fa0&s=${input}`)
+            return await fetch(`https://www.omdbapi.com/?apikey=652c5fa0&s=${input}`)
                 .then(response => response.json())
                 .then(data => { 
                     data.Search ? setResultList(data.Search) : setResultList([]);
